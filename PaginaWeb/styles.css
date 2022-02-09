@@ -1,0 +1,137 @@
+:root {
+  --toolbar-color: #98d9ff;
+  --link-color: #b5ff54;
+  --title-color: #2180fc;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Navbar*/
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  line-height: 75px;
+}
+
+.logo h1 {
+  margin-right: 2em;
+}
+
+.lista ul {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.lista a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 29px;
+}
+
+.lista a:hover {
+  color: white;
+  background-color: greenyellow;
+}
+
+.lista a:active {
+  opacity: 0.7;
+}
+
+/*Bienvenida*/
+
+.bienvenida {
+  position: relative;
+}
+
+.bienvenida img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.contenido-bienvenida {
+  position: absolute;
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  width: auto;
+  padding: 10px;
+  margin-top: 1em;
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: green;
+  color: white;
+}
+
+/*galeria*/
+
+.galeria {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.card {
+  width: 330px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+
+.card .card-contenido {
+  padding: 1em;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-buton {
+  margin: 16px;
+}
+
+/*footer*/
+
+.footer {
+  height: 200px;
+  width: auto;
+  margin-top: 25px;
+  background-color: black;
+  color: white;
+}
+
+.footer .fab {
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .bienvenida img {
+    height: 350px;
+  }
+}
