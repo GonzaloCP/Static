@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.marco {
+  height: 550px;
+  width: 380px;
+  margin: 2em 0 0 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(60, 57, 66);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(60, 57, 66);
+}
+
+.pantalla {
+  height: 40%;
+  width: 100%;
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  line-height: 300px;
+}
+
+.botones {
+  height: 60%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  height: 95%;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+  background-color: rgb(239, 175, 255);
+  border-radius: 4px;
+  border-style: none;
+}
+
+.limpiar,
+.borrar,
+.porcentaje,
+.dividir,
+.multiplicar,
+.restar,
+.sumar {
+  background-color: rgb(254, 255, 175);
+}
+
+.punto {
+  background-color: rgb(148, 194, 255);
+}
+
+.igual {
+  grid-column: 3/5;
+  background-color: rgb(255, 208, 147);
+}
+
+.btn:hover {
+  opacity: 0.5;
+}

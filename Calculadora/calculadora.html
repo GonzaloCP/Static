@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="calculadora.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="marco">
+      <div class="pantalla">
+        <h2 id="output"></h2>
+      </div>
+      <div class="botones">
+        <input type="button" value="AC" onclick="insertar('AC')" class="btn limpiar"></input>
+        <input type="button" value="C" onclick="insertar('C')" class="btn borrar"></input>
+        <input type="button" value="%" onclick="insertar('%')" class="btn porcentaje"></input>
+        <input type="button" value="/" onclick="insertar('/')" class="btn dividir"></input>
+        <input type="button" value="7" onclick="insertar('7')" class="btn 7"></input>
+        <input type="button" value="8" onclick="insertar('8')" class="btn 8"></input>
+        <input type="button" value="9" onclick="insertar('9')" class="btn 9"></input>
+        <input type="button" value="*" onclick="insertar('*')" class="btn multiplicar"></input>
+        <input type="button" value="4" onclick="insertar('4')" class="btn 4"></input>
+        <input type="button" value="5" onclick="insertar('5')" class="btn 5"></input>
+        <input type="button" value="6" onclick="insertar('6')" class="btn 6"></input>
+        <input type="button" value="-" onclick="insertar('-')" class="btn restar"></input>
+        <input type="button" value="1" onclick="insertar('1')" class="btn 1"></input>
+        <input type="button" value="2" onclick="insertar('2')" class="btn 2"></input>
+        <input type="button" value="3" onclick="insertar('3')" class="btn 3"></input>
+        <input type="button" value="+" onclick="insertar('+')" class="btn sumar"></input>
+        <input type="button" value="." onclick="insertar('.')" class="btn punto"></input>
+        <input type="button" value="0" onclick="insertar('0')" class="btn 0"></input>
+        <input type="button" value="=" onclick="insertar('=')" class="btn igual"></input>
+      </div>
+    </div>
+    <script src="calculadora.js"></script>
+  </body>
+</html>
